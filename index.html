@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottie Animation Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+        #lottie {
+            width: 300px; 
+            height: 500px; 
+        }
+    </style>
+</head>
+<body>
+
+    <div id="lottie"></div>
+    <audio autoplay loop>
+        <source src="paytm.mp3" type="audio/ogg">
+    </audio>
+
+    <script>
+        // Load the Lottie animation
+        const animation = lottie.loadAnimation({
+            container: document.getElementById('lottie'), 
+            renderer: 'svg',
+            loop: true, 
+            autoplay: true, 
+            path: 'three.json' 
+        });
+
+        
+        setTimeout(() => {
+            window.location.href = "https://bookstore-qwlu.onrender.com"; 
+        }, 3000); 
+    </script>
+</body>
+</html>
